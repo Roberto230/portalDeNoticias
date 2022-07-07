@@ -8,6 +8,7 @@
 header{
     padding:8px 0;
     background-color: #0aacdc;
+    text-align: center;
 }
 
 .center{
@@ -15,6 +16,7 @@ header{
     margin:0 auto;
     padding:0 2%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -137,6 +139,8 @@ header{
     width: 60%;
     padding: 0 10px;
     display: flex;
+    height: 100%;
+    flex-wrap: wrap;
   }
 
   .box-ultima-single{
@@ -173,12 +177,28 @@ header{
     margin: 20px 0;
   }
 
+  .box-ultima-single a{
+    display: block;
+    width: 171px;
+    height: 56px;
+    border: 1px solid #EBEBEB;
+    text-decoration: none;
+    color: #0AACDC;
+    border-radius: 10px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 19px;
+  }
+
   .conteudo-noticia-single{
     padding: 20px;
   }
 
   .mais-lidas{
     width: 40%;
+    height: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
   }
 
   .mais-lidas > h3{
@@ -188,4 +208,58 @@ header{
     padding: 10px 8px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+
+  .mais-lidas-noticia-single{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .mais-lidas-noticia-single img{
+    width: 30%;
+  }
+
+  .mais-lidas-noticia-single .texto-mais-lidas-single{
+    width: 70%;
+    padding: 8px 20px;
+  }
+
+  .texto-mais-lidas-single h4{
+    color: #40BE65;
+    letter-spacing: 3.2px;
+  }
+
+  .texto-mais-lidas-single p{
+    color: #7B8591;
+    font-size: 14px;
+  }
+
+  .texto-mais-lidas-single a{
+    margin-top: 10px;
+    display: block;
+    width: 121;
+    height: 36px;
+    border: 1px solid #EBEBEB;
+    text-decoration: none;
+    color: #0AACDC;
+    border-radius: 10px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width:768px){
+    .logo,.form-busca{width: 100%;}
+    .form-busca{
+      text-align: center;
+      margin-top: 10px;
+    }
+    .title-destaque-descricao h2{
+      font-size: 34px;
+      margin: 20px 0;
+    }
+    .mais-lidas,.ultimas{width: 100%;margin-bottom: 20px;}
+    .box-ultima-single{width: 100%;margin-right: 0;margin-bottom: 20px;}
   }
