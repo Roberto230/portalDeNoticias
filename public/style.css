@@ -250,6 +250,13 @@ header{
     font-size: 14px;
   }
 
+  footer{
+    background-color: #0aacdc;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+  }
+
   @media screen and (max-width:768px){
     .logo,.form-busca{width: 100%;}
     .form-busca{
