@@ -20,12 +20,17 @@ header{
 }
 
 .logo{
+  text-align: left;
     width:50%;
 }
 
 .logo h2{
-    color:white;
+    color:#fff;
+}
 
+.logo a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .form-busca{
@@ -113,7 +118,10 @@ header{
     font-weight: lighter;
     font-size: 16px;
   }
-
+  .title-destaque-descricao a{
+    color: #fff;
+    text-decoration: none;
+  }
   .overlay-destaque{
       position: absolute;
       left:0;
@@ -257,7 +265,49 @@ header{
     padding: 8px 0;
   }
 
+  section.noticia{
+    padding: 20px 0;
+    background-color: #eaeaea;
+  }
+
+  .noticia-single{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 58%;
+    margin-right: 2%;
+  }
+
+  .noticia-single h2{
+    color: #303336;
+    font-size: 42px;
+    margin: 10px 0;
+  }
+
+  .noticia-single span{
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #858585;
+    font-weight: bold;
+  }
+  
+  .noticia-single p{
+    color: #7b8591;
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+
+  .noticia-single h3{
+    color: #7b8591;
+    font-size: 33px;
+    margin-top: 10px 0;
+  }
+
   @media screen and (max-width:768px){
+    .noticia-single{width: 100%;margin-bottom: 20px;}
+    .logo{text-align: center;}
     .logo,.form-busca{width: 100%;}
     .form-busca{
       text-align: center;

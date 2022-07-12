@@ -21,7 +21,7 @@ app.get('/',(req,res)=>{
     if(req.query.busca == null){
         res.render('home',{});
     }else{
-        res.send('Você buscou: '+req.query.busca);
+        res.render('busca',{});
     }
 
   
@@ -29,7 +29,8 @@ app.get('/',(req,res)=>{
 
 
 app.get('/:slug',(req,res)=>{
-    res.send(req.params.slug);
+    // res.send(req.params.slug);
+    res.render('single',{});
 })
 
 
